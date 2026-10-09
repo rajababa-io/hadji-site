@@ -95,6 +95,25 @@
   .feature .ic svg { width: 22px; height: 22px; }
   .feature h3 { margin-bottom: 8px; }
 
+
+  .proof { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-top: 72px; }
+  .proof:first-of-type { margin-top: 0; }
+  .proof.flip .shot { order: 2; }
+  .tag { display: inline-block; font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; padding: 5px 10px; border-radius: 999px; background: #FFE6DA; color: var(--edge); margin-bottom: 14px; }
+  .proof h3 { font-size: 30px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 14px; }
+  .proof p { color: var(--slate); font-size: 18px; }
+  .proof ul { margin: 16px 0 0; padding-left: 20px; color: var(--slate); }
+  .proof li { margin: 6px 0; }
+  .shot { margin: 0; }
+  .shot img { display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid var(--line); box-shadow: 0 30px 60px -34px rgba(17,17,17,.35); background: var(--paper); }
+  .shot figcaption { margin-top: 10px; font-size: 14px; color: var(--slate); }
+  .shot.email img { max-width: 420px; margin: 0 auto; }
+  .shot.email figcaption { text-align: center; }
+  .shot-pair { display: grid; gap: 16px; }
+  .wide { margin-top: 72px; }
+  .wide h3 { font-size: 30px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 12px; }
+  .wide p { color: var(--slate); font-size: 18px; max-width: 720px; margin-bottom: 28px; }
+
   .who { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
   .who ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
   .who li { padding: 20px 22px; border-radius: 16px; background: var(--paper); border: 1px solid var(--line); border-left: 5px solid var(--tangerine); }
@@ -110,7 +129,8 @@
 
   @media (max-width: 900px) {
     .hero { padding: 48px 0 64px; }
-    .hero .wrap, .who { grid-template-columns: 1fr; gap: 40px; }
+    .hero .wrap, .who, .proof { grid-template-columns: 1fr; gap: 32px; }
+    .proof.flip .shot { order: 0; }
     .pains, .features { grid-template-columns: 1fr; }
     .steps { grid-template-columns: 1fr 1fr; }
     nav a.link { display: none; }
@@ -131,6 +151,7 @@
     <a class="logo" href="/" aria-label="Hadji home"><img src="/assets/logo.svg" width="101" height="42" alt="hadji"></a>
     <nav>
       <a class="link" href="#how">How it works</a>
+      <a class="link" href="#work">See it work</a>
       <a class="link" href="#features">What you get</a>
       <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSeXhepqTlClRulPfzfcVWBVjMBx3YRTRbz-kNk48ORORa-Zxw/viewform" target="_blank" rel="noopener">Get early access</a>
     </nav>
@@ -195,6 +216,66 @@
         <div class="step"><h3>Hadji does the work</h3><p class="slate">Plan, build, check, review — each step in its own walled-off workspace.</p></div>
         <div class="step"><h3>You approve what matters</h3><p class="slate">It stops where you choose, and shows you the choice as a picture.</p></div>
         <div class="step"><h3>It's all written down</h3><p class="slate">Every step, approval and result is kept, so you always know who did what.</p></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">See it work</span>
+        <h2>Real work, start to finish.</h2>
+        <p>Screens from Hadji itself, and two things built with it.</p>
+      </div>
+
+      <div class="wide" style="margin-top:0">
+        <span class="tag">The app</span>
+        <h3>One message in. A picture and a question out.</h3>
+        <p>Asked to fix a checkout bug, Hadji found the cause, fixed it and added a test — then reported back with a picture of each step and the one choice that was left for you.</p>
+        <figure class="shot">
+          <a href="/assets/app-chat.webp" target="_blank" rel="noopener"><img src="/assets/app-chat.webp" width="1600" height="1111" loading="lazy" alt="Hadji screen: a finished checkout fix shown as a picture of each step, with a question card asking what to do next"></a>
+          <figcaption>A real Hadji chat on a sample shop project.</figcaption>
+        </figure>
+      </div>
+
+      <div class="proof flip">
+        <figure class="shot">
+          <a href="/assets/app-run.webp" target="_blank" rel="noopener"><img src="/assets/app-run.webp" width="1400" height="905" loading="lazy" alt="Hadji run record: each step of a project check with its time, cost and result"></a>
+          <figcaption>The record behind a run: each step, what it did, how long it took and what it cost.</figcaption>
+        </figure>
+        <div>
+          <span class="tag">The record</span>
+          <h3>Nothing happens off the books.</h3>
+          <p>Every run keeps its own log — each step, each check, each result. When someone asks "what changed and why?", the answer is already written down.</p>
+        </div>
+      </div>
+
+      <div class="proof">
+        <figure class="shot email">
+          <a href="/assets/door-email.webp" target="_blank" rel="noopener"><img src="/assets/door-email.webp" width="800" height="1000" loading="lazy" alt="Welcome email with a six-digit door PIN, plan and expiry date"></a>
+          <figcaption>The email a new member gets. Sample details.</figcaption>
+        </figure>
+        <div>
+          <span class="tag">Built with Hadji</span>
+          <h3>Door codes for a Lake Tahoe gym.</h3>
+          <p>Live today. When someone buys a membership on the gym's website, they get a door code by email within moments. When the membership ends, the code stops working. No front-desk work.</p>
+          <ul>
+            <li>Runs a real gym's front door, every day</li>
+            <li>Every code made or switched off is logged</li>
+            <li>Staff fix any mismatch with one click, one person at a time</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="wide">
+        <span class="tag">Built with Hadji</span>
+        <h3>A control screen for a camper van.</h3>
+        <p>A clickable design for a van's built-in screen and a matching phone app — heat, power, water and lights in one place. From first sketch to working prototype in a few days of back-and-forth.</p>
+        <figure class="shot">
+          <a href="/assets/van.webp" target="_blank" rel="noopener"><img src="/assets/van.webp" width="1600" height="752" loading="lazy" alt="Van control screen showing weather, inside temperature, switches, battery and water levels, next to a matching phone app"></a>
+          <figcaption>Prototype: the van's screen, and the phone app that mirrors it.</figcaption>
+        </figure>
       </div>
     </div>
   </section>
