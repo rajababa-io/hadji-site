@@ -110,6 +110,8 @@
   .shot.email img { max-width: 420px; margin: 0 auto; }
   .shot.email figcaption { text-align: center; }
   .shot-pair { display: grid; gap: 16px; }
+  .gym-shots { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+  .gym-shots .big { grid-column: 1 / -1; }
   .wide { margin-top: 72px; }
   .wide h3 { font-size: 30px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 12px; }
   .wide p { color: var(--slate); font-size: 18px; max-width: 720px; margin-bottom: 28px; }
@@ -131,6 +133,7 @@
     .hero { padding: 48px 0 64px; }
     .hero .wrap, .who, .proof { grid-template-columns: 1fr; gap: 32px; }
     .proof.flip .shot { order: 0; }
+    .gym-shots { grid-template-columns: 1fr; }
     .pains, .features { grid-template-columns: 1fr; }
     .steps { grid-template-columns: 1fr 1fr; }
     nav a.link { display: none; }
@@ -266,6 +269,21 @@
             <li>Staff fix any mismatch with one click, one person at a time</li>
           </ul>
         </div>
+      </div>
+
+      <div class="gym-shots">
+        <figure class="shot big">
+          <a href="/assets/gym-members.webp" target="_blank" rel="noopener"><img src="/assets/gym-members.webp" width="1600" height="1000" loading="lazy" alt="Gym admin screen listing members with status, plan, expiry and a hidden door code"></a>
+          <figcaption>The gym's member list: who has a door code, on which plan, until when. Names and emails replaced.</figcaption>
+        </figure>
+        <figure class="shot">
+          <a href="/assets/gym-reconcile.webp" target="_blank" rel="noopener"><img src="/assets/gym-reconcile.webp" width="1200" height="375" loading="lazy" alt="Daily check comparing purchases with who the door lets in; nothing changes on its own"></a>
+          <figcaption>A daily check compares purchases with the door. Nothing changes until a person says so.</figcaption>
+        </figure>
+        <figure class="shot">
+          <a href="/assets/gym-templates.webp" target="_blank" rel="noopener"><img src="/assets/gym-templates.webp" width="1200" height="617" loading="lazy" alt="Email templates for welcome, renewal, pause, restore, cancel and end of access"></a>
+          <figcaption>Every email a member can get, written in plain words.</figcaption>
+        </figure>
       </div>
 
       <div class="wide">
