@@ -188,6 +188,10 @@
   .mobile li i { font-style: normal; color: var(--tan); font: 13px var(--mono); padding-top: 3px; }
 
   /* built with */
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  .stat { border: 1px solid var(--line2); border-radius: 14px; background: var(--panel); padding: 22px 24px; }
+  .stat b { display: block; font-size: 44px; font-weight: 600; letter-spacing: -.02em; line-height: 1.1; }
+  .stat span { color: var(--mute); font-size: 14px; }
   .shots { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .shots .frame img { width: 100%; display: block; filter: brightness(.9); }
   .cap { padding: 16px 18px; border-top: 1px solid var(--line); }
@@ -218,7 +222,7 @@
     .run { padding-bottom: 20px; } .steps li .t { display: none; }
     #team { margin-top: 0; }
     section { padding: 80px 0; }
-    .sh, .models, .two, .mobile, .shots { grid-template-columns: 1fr; }
+    .sh, .models, .two, .mobile, .shots, .stats { grid-template-columns: 1fr; }
     .sh { gap: 16px; margin-bottom: 40px; }
     .board { grid-template-columns: 1fr 1fr; }
     .feat { grid-template-columns: 1fr; gap: 12px; } .feat > div { border: 0; padding: 0; }
@@ -444,6 +448,10 @@
   <div class="sh">
     <h2>Built with Hadji.</h2>
     <p>Hadji builds Hadji — the product is made on its own line. And real things run on it today — <b>built by agents, approved by a person.</b></p>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>392</b><span>changes merged into Hadji in one week — Oct 18 to 24, 2026. Counted on Hadji's own GitHub.</span></div>
+    <div class="stat"><b>46</b><span>releases to production that same week — new work reaches users the day it is done.</span></div>
   </div>
   <div class="shots">
     <div class="frame"><img src="/assets/gym-dashboard.webp" alt="The gym's dashboard: members, what happened today, and 30 days of purchases" loading="lazy"><div class="cap"><b>Door codes for <a href="https://omnitahoe.com" target="_blank" rel="noopener">OMNI Tahoe</a></b><span>Buy a membership on the website, get a door code by email. Runs the front door every day. Names and emails replaced.</span></div></div>
