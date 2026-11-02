@@ -1,0 +1,49 @@
+[
+  {
+    "id": "sample-approve-a-change",
+    "title": "Approve a change before it ships",
+    "summary": "Hadji stops for your OK on anything that matters. Here is how to review it and say yes.",
+    "url": "https://hadji.ai/docs/deploy/sample-approve-a-change/",
+    "screens": [
+      "inbox",
+      "job"
+    ],
+    "kind": "guide",
+    "video": {
+      "kind": "recording",
+      "src": "https://hadji.ai/docs/media/sample-approve-a-change.mp4",
+      "poster": "https://hadji.ai/docs/media/sample-approve-a-change.jpg",
+      "duration": 15
+    },
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "sample-start-a-job",
+    "title": "Start your first job",
+    "summary": "Describe the problem in plain words. Hadji plans it, builds it and tests it.",
+    "url": "https://hadji.ai/docs/start/sample-start-a-job/",
+    "screens": [
+      "inbox"
+    ],
+    "kind": "guide",
+    "video": {
+      "kind": "recording",
+      "src": "https://hadji.ai/docs/media/sample-start-a-job.mp4",
+      "poster": "https://hadji.ai/docs/media/sample-start-a-job.jpg",
+      "duration": 15
+    },
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "sample-what-is-a-check",
+    "title": "What the checks mean",
+    "summary": "Types, lint, tests and review. What each one tells you before you approve.",
+    "url": "https://hadji.ai/docs/start/sample-what-is-a-check/",
+    "screens": [
+      "job"
+    ],
+    "kind": "guide",
+    "video": null,
+    "updated": "2026-11-02"
+  }
+]
