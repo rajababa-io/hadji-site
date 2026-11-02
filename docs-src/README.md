@@ -43,3 +43,4 @@ Checks every field, that screen patterns are unique, that every console screen l
 - Private databases (`?settings=private-databases`): its guide was taken down in #17.
 - `/admin` and `/founder/*`: staff-only pages.
 - Add project is a dialog with no address, so its guide has `screens: []`; the All projects guide links to it.
+- `sample-*.md` files are the site generator's test fixtures; `check.mjs` skips them.
