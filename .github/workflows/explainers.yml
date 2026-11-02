@@ -1,0 +1,45 @@
+name: Render explainers
+
+on:
+  push:
+    branches: [main]
+    paths: ['explainers/**', '.github/workflows/explainers.yml']
+  pull_request:
+    paths: ['explainers/**', '.github/workflows/explainers.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: explainers-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: explainers/package-lock.json
+      - run: npm ci
+        working-directory: explainers
+      - run: npm run render
+        working-directory: explainers
+      - uses: actions/upload-artifact@v4
+        with:
+          name: explainers
+          path: docs/media/
+      # Commit rendered media back (same-repo branches only; never loops: media paths don't trigger this workflow).
+      - name: Commit rendered media
+        if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/media
+          git diff --cached --quiet || { git commit -m "Render explainers"; git push; }
