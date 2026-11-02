@@ -129,6 +129,8 @@ const guides = []
 for (const path of walk(root)) {
   const file = relative(root, path).split(sep).join("/")
   if (file === "README.md") continue
+  // The generator's own fixtures (hadji#1675), written to an older contract; not guides.
+  if (/\/sample-[^/]*\.md$/.test(file)) continue
   let parsed
   try {
     parsed = frontMatter(readFileSync(path, "utf8"))
