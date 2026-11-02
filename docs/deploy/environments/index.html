@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Deploy tab — Hadji Docs</title>
+<meta name="description" content="See your environments, what each one runs, and how a change moves between them.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#08090A">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/icon-180.png">
+<link rel="canonical" href="https://hadji.ai/docs/deploy/environments/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/docs/assets/docs.css">
+</head>
+<body>
+<header><div class="bar">
+  <a class="brand" href="/" aria-label="Hadji home"><img src="/assets/wordmark.svg" alt="Hadji"></a>
+  <a class="docs-tag" href="/docs/">Docs</a>
+  <form class="search" role="search" onsubmit="return false"><input id="q" type="search" placeholder="Search the docs" autocomplete="off" aria-label="Search the docs"><div id="results" class="results" hidden></div></form>
+  <nav><a href="/docs/" class="on">Guides</a><a href="/docs/videos/">Videos</a><a href="/">Product</a><a class="pill" href="https://app.hadji.ai">Open Hadji</a></nav>
+</div></header>
+<div class="layout">
+  <nav class="side" aria-label="Guides"><h6>Deploy</h6><a href="/docs/deploy/sample-approve-a-change/">Approve a change before it ships</a><a href="/docs/deploy/environments/" class="open" aria-current="page">The Deploy tab</a><a href="/docs/deploy/preview/">Set up a preview deploy</a><a href="/docs/deploy/release/">Release a change</a><h6>Files</h6><a href="/docs/files/edit-files/">Read and edit files</a><h6>How It Works</h6><a href="/docs/how-it-works/how-a-session-works/">How a session works</a><a href="/docs/how-it-works/change-to-production/">How a change reaches production</a><h6>Issues</h6><a href="/docs/issues/board/">The Issues board</a><a href="/docs/issues/start-from-issue/">Start a session from an issue</a><h6>Overview</h6><a href="/docs/overview/project-overview/">The project Overview</a><a href="/docs/overview/pictures-and-handoffs/">Pictures and handoffs</a><h6>Phone</h6><a href="/docs/phone/install/">Install the phone app</a><a href="/docs/phone/using-the-phone-app/">Using the phone app</a><h6>Projects</h6><a href="/docs/projects/all-projects/">All projects</a><a href="/docs/projects/add-project/">Add a project</a><h6>Sessions</h6><a href="/docs/sessions/using-sessions/">The Sessions tab</a><a href="/docs/sessions/status-colours/">What the colors mean</a><a href="/docs/sessions/questions-and-approvals/">Questions and approvals</a><a href="/docs/sessions/side-chat/">Ask about a session without interrupting it</a><a href="/docs/sessions/cost-and-context/">Cost and context</a><h6>Settings</h6><a href="/docs/settings/preferences/">Preferences</a><a href="/docs/settings/profile/">Your profile</a><a href="/docs/settings/notifications/">Notifications</a><a href="/docs/settings/connected-accounts/">Connected accounts</a><a href="/docs/settings/ai-models-agents/">AI models and agents</a><a href="/docs/settings/models-costs/">Models and costs</a><a href="/docs/settings/instructions/">Session instructions</a><a href="/docs/settings/session-image/">Session image and startup steps</a><a href="/docs/settings/session-settings/">Session settings</a><a href="/docs/settings/sandbox-network/">Sandbox network</a><a href="/docs/settings/organization/">Organization settings</a><a href="/docs/settings/members-roles/">Members and roles</a><a href="/docs/settings/secrets/">Secrets</a><a href="/docs/settings/github/">GitHub</a><a href="/docs/settings/audit-log/">Audit log</a><a href="/docs/settings/project-settings/">Project settings</a><h6>Start</h6><a href="/docs/start/sample-start-a-job/">Start your first job</a><a href="/docs/start/sample-what-is-a-check/">What the checks mean</a><a href="/docs/start/what-hadji-is/">What Hadji is</a><a href="/docs/start/first-session/">Your first session</a><a href="/docs/start/new-organization/">Create an organization</a><a href="/docs/start/join-an-organization/">Sign in and join an organization</a></nav>
+  <article class="doc">
+    <div class="crumb"><a href="/docs/">Guides</a> / <b>Deploy</b></div>
+    <h1>The Deploy tab</h1>
+    <p class="lead">See your environments, what each one runs, and how a change moves between them.</p>
+    <p class="meta">Updated Nov 2 · about 2 minutes</p>
+    
+    <div class="prose">
+<p>The Deploy tab shows where your app runs, and moves changes from one place to the next.</p>
+<figure><img src="/docs/media/shots/deploy-environments-1.png" alt="Deploy tab with Preview and Production" loading="lazy"></figure>
+<h2 id="environments">Environments</h2>
+<p>An environment is a place your app runs. Common ones are <strong>Preview</strong> (to try changes) and <strong>Production</strong> (what customers see). Each environment follows one Git branch.</p>
+<p>The tab draws them in bands:</p>
+<ul><li><strong>Code</strong> — the branches.</li><li><strong>Deploy</strong> — the deploy that is running or last ran.</li><li><strong>Running</strong> — each environment's site, and what it is running now.</li></ul>
+<h2 id="work-lands-on">Work lands on</h2>
+<p>At the top: <strong>Work lands on</strong> <code>dev</code> (or your branch). This is the branch sessions start from and open their pull requests into. By default it follows GitHub's default branch. A project admin can click <strong>Change</strong>.</p>
+<h2 id="status-of-an-environment">Status of an environment</h2>
+<ul><li><strong>Live</strong> — running the newest code.</li><li><strong>Deploying</strong> — a deploy is in progress.</li><li><strong>Deploy failed</strong> — the last deploy did not work.</li><li><strong>Unknown</strong> or <strong>Not tracked</strong> — Hadji cannot tell. See below.</li></ul>
+<p>A deploy shows three stages: <strong>Merged</strong>, <strong>Deploy</strong>, <strong>Live</strong>.</p>
+<h2 id="tracking">Tracking</h2>
+<p>Hadji learns an environment's status in two ways:</p>
+<ul><li>From <strong>GitHub deployments</strong>, if your host (Vercel, Netlify and others) reports them. Fill in the GitHub environment name when you add the environment.</li><li>From a <strong>GitHub Action</strong> that Hadji starts itself.</li></ul>
+<p>Without either, the environment reads <strong>Not tracked</strong>, and you check your host.</p>
+<h2 id="who-can-do-what">Who can do what</h2>
+<ul><li><strong>Viewers</strong> see everything and have no buttons.</li><li><strong>Members</strong> can press <strong>Deploy now</strong> and start a promotion.</li><li><strong>Project admins</strong> can add, edit and remove environments, and release.</li></ul>
+<h2 id="hosts">Hosts</h2>
+<p>If the project deploys through its own host, the tab says so. It is changed and deployed there.</p>
+<h2 id="next">Next</h2>
+<ul><li><a href="/docs/deploy/preview/">Set up a preview deploy</a></li><li><a href="/docs/deploy/release/">Release a change</a></li><li><a href="/docs/how-it-works/change-to-production/">How a change reaches production</a></li></ul>
+    </div>
+    <aside class="note ask"><b>Rather not click through it?</b> Ask Hadji to do it for you — type what you want in the chat and it does the steps. <a href="https://app.hadji.ai">Ask Hadji →</a></aside>
+  </article>
+  <aside class="rail">
+    <div class="toc"><h6>On this page</h6><a href="#environments">Environments</a><a href="#work-lands-on">Work lands on</a><a href="#status-of-an-environment">Status of an environment</a><a href="#tracking">Tracking</a><a href="#who-can-do-what">Who can do what</a><a href="#hosts">Hosts</a><a href="#next">Next</a></div>
+    
+  </aside>
+</div>
+<footer><div class="wrap"><span class="brand"><img src="/assets/wordmark.svg" alt="Hadji" style="height:20px"></span><span>© 2026 Hadji</span></div></footer>
+<script src="/docs/assets/docs.js"></script>
+</body></html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Questions and approvals — Hadji Docs</title>
+<meta name="description" content="Answer an agent's question, press Go, or approve a request before work starts.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#08090A">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/icon-180.png">
+<link rel="canonical" href="https://hadji.ai/docs/sessions/questions-and-approvals/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/docs/assets/docs.css">
+</head>
+<body>
+<header><div class="bar">
+  <a class="brand" href="/" aria-label="Hadji home"><img src="/assets/wordmark.svg" alt="Hadji"></a>
+  <a class="docs-tag" href="/docs/">Docs</a>
+  <form class="search" role="search" onsubmit="return false"><input id="q" type="search" placeholder="Search the docs" autocomplete="off" aria-label="Search the docs"><div id="results" class="results" hidden></div></form>
+  <nav><a href="/docs/" class="on">Guides</a><a href="/docs/videos/">Videos</a><a href="/">Product</a><a class="pill" href="https://app.hadji.ai">Open Hadji</a></nav>
+</div></header>
+<div class="layout">
+  <nav class="side" aria-label="Guides"><h6>Deploy</h6><a href="/docs/deploy/sample-approve-a-change/">Approve a change before it ships</a><a href="/docs/deploy/environments/">The Deploy tab</a><a href="/docs/deploy/preview/">Set up a preview deploy</a><a href="/docs/deploy/release/">Release a change</a><h6>Files</h6><a href="/docs/files/edit-files/">Read and edit files</a><h6>How It Works</h6><a href="/docs/how-it-works/how-a-session-works/">How a session works</a><a href="/docs/how-it-works/change-to-production/">How a change reaches production</a><h6>Issues</h6><a href="/docs/issues/board/">The Issues board</a><a href="/docs/issues/start-from-issue/">Start a session from an issue</a><h6>Overview</h6><a href="/docs/overview/project-overview/">The project Overview</a><a href="/docs/overview/pictures-and-handoffs/">Pictures and handoffs</a><h6>Phone</h6><a href="/docs/phone/install/">Install the phone app</a><a href="/docs/phone/using-the-phone-app/">Using the phone app</a><h6>Projects</h6><a href="/docs/projects/all-projects/">All projects</a><a href="/docs/projects/add-project/">Add a project</a><h6>Sessions</h6><a href="/docs/sessions/using-sessions/">The Sessions tab</a><a href="/docs/sessions/status-colours/">What the colors mean</a><a href="/docs/sessions/questions-and-approvals/" class="open" aria-current="page">Questions and approvals</a><a href="/docs/sessions/side-chat/">Ask about a session without interrupting it</a><a href="/docs/sessions/cost-and-context/">Cost and context</a><h6>Settings</h6><a href="/docs/settings/preferences/">Preferences</a><a href="/docs/settings/profile/">Your profile</a><a href="/docs/settings/notifications/">Notifications</a><a href="/docs/settings/connected-accounts/">Connected accounts</a><a href="/docs/settings/ai-models-agents/">AI models and agents</a><a href="/docs/settings/models-costs/">Models and costs</a><a href="/docs/settings/instructions/">Session instructions</a><a href="/docs/settings/session-image/">Session image and startup steps</a><a href="/docs/settings/session-settings/">Session settings</a><a href="/docs/settings/sandbox-network/">Sandbox network</a><a href="/docs/settings/organization/">Organization settings</a><a href="/docs/settings/members-roles/">Members and roles</a><a href="/docs/settings/secrets/">Secrets</a><a href="/docs/settings/github/">GitHub</a><a href="/docs/settings/audit-log/">Audit log</a><a href="/docs/settings/project-settings/">Project settings</a><h6>Start</h6><a href="/docs/start/sample-start-a-job/">Start your first job</a><a href="/docs/start/sample-what-is-a-check/">What the checks mean</a><a href="/docs/start/what-hadji-is/">What Hadji is</a><a href="/docs/start/first-session/">Your first session</a><a href="/docs/start/new-organization/">Create an organization</a><a href="/docs/start/join-an-organization/">Sign in and join an organization</a></nav>
+  <article class="doc">
+    <div class="crumb"><a href="/docs/">Guides</a> / <b>Sessions</b></div>
+    <h1>Questions and approvals</h1>
+    <p class="lead">Answer an agent's question, press Go, or approve a request before work starts.</p>
+    <p class="meta">Updated Nov 2 · 3 steps · about 2 minutes</p>
+    
+    <div class="prose">
+<p>An agent sometimes stops and needs a person. There are three ways.</p>
+<h2 id="a-question" class="step"><span class="badge">1</span>A question</h2>
+<p>The agent asks in the chat, often as a card with choices. The dot turns pink: <strong>Question for you</strong>.</p>
+<ol><li>Read the card.</li><li>Click a choice, or type your own answer.</li><li>Send it. The agent carries on.</li></ol>
+<p>Cards can have several questions and a review step before you send. Press <strong>↑</strong> in the message box to jump to the question.</p>
+<figure><img src="/docs/media/shots/questions-and-approvals-1.png" alt="A question card" loading="lazy"></figure>
+<h2 id="go-ask-first" class="step"><span class="badge">2</span>Go (ask first)</h2>
+<p>When <strong>Ask before changing code</strong> is on, a new session first looks at the problem and posts a plan. A bar says <strong>Waiting for your Go</strong>.</p>
+<ul><li>Until Go, the session can look and plan. It cannot push code, open a pull request or merge.</li><li>Only the person who started the session sees the <strong>Go</strong> button. Everyone else sees who it waits on.</li><li>A reply in chat does not count. Click <strong>Go</strong>.</li></ul>
+<p>An admin turns this on for the whole organization in <a href="/docs/settings/session-settings/">Session settings</a>, or for one project in <a href="/docs/settings/project-settings/">Project settings</a>.</p>
+<figure><img src="/docs/media/shots/questions-and-approvals-2.png" alt="The Go bar" loading="lazy"></figure>
+<h2 id="an-approval" class="step"><span class="badge">3</span>An approval</h2>
+<p>Some sessions start from a request, such as an email sent to the project's inbound address. These are locked until the project owner decides. The bar says <strong>Waiting for the project owner's call</strong>.</p>
+<p>Until approved, the session can only read and draw mockups.</p>
+<ul><li><strong>Approve</strong> — building starts as soon as you confirm. The confirm step has a message box. If the request came by email, the sender is emailed your message.</li><li><strong>Decline</strong> — nothing is built.</li><li><strong>Ask for changes</strong> — type in the message box. This does not decide anything, and the requester is not emailed.</li><li>If the agent proposed options, the bar shows which one it recommends. You can pick another before approving.</li></ul>
+<figure><img src="/docs/media/shots/questions-and-approvals-3.png" alt="The approval bar" loading="lazy"></figure>
+<p>The server holds these locks, not just the page. A locked session has no GitHub access at all.</p>
+    </div>
+    <aside class="note ask"><b>Rather not click through it?</b> Ask Hadji to do it for you — type what you want in the chat and it does the steps. <a href="https://app.hadji.ai">Ask Hadji →</a></aside>
+  </article>
+  <aside class="rail">
+    <div class="toc"><h6>On this page</h6><a href="#a-question">A question</a><a href="#go-ask-first">Go (ask first)</a><a href="#an-approval">An approval</a></div>
+    
+  </aside>
+</div>
+<footer><div class="wrap"><span class="brand"><img src="/assets/wordmark.svg" alt="Hadji" style="height:20px"></span><span>© 2026 Hadji</span></div></footer>
+<script src="/docs/assets/docs.js"></script>
+</body></html>

@@ -18,6 +18,440 @@
     "updated": "2026-11-02"
   },
   {
+    "id": "deploy/environments",
+    "title": "The Deploy tab",
+    "summary": "See your environments, what each one runs, and how a change moves between them.",
+    "url": "https://hadji.ai/docs/deploy/environments/",
+    "screens": [
+      "/o/*/p/*/deploys"
+    ],
+    "kind": "concept",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "deploy/preview",
+    "title": "Set up a preview deploy",
+    "summary": "Add a Preview environment before Production, so changes can be tried first.",
+    "url": "https://hadji.ai/docs/deploy/preview/",
+    "screens": [],
+    "kind": "how-to",
+    "video": {
+      "kind": "recording",
+      "src": "https://hadji.ai/docs/media/deploy-preview.mp4",
+      "poster": "https://hadji.ai/docs/media/deploy-preview.jpg",
+      "duration": null
+    },
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "deploy/release",
+    "title": "Release a change",
+    "summary": "Move what runs on one environment to the next, usually Preview to Production.",
+    "url": "https://hadji.ai/docs/deploy/release/",
+    "screens": [],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "files/edit-files",
+    "title": "Read and edit files",
+    "summary": "Browse the project's files and make a small edit right in the console.",
+    "url": "https://hadji.ai/docs/files/edit-files/",
+    "screens": [
+      "/o/*/p/*/files"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "how-it-works/how-a-session-works",
+    "title": "How a session works",
+    "summary": "What happens from your first message until the work is merged.",
+    "url": "https://hadji.ai/docs/how-it-works/how-a-session-works/",
+    "screens": [],
+    "kind": "explainer",
+    "video": {
+      "kind": "explainer",
+      "src": "https://hadji.ai/docs/media/how-a-session-works.mp4",
+      "poster": "https://hadji.ai/docs/media/how-a-session-works.jpg",
+      "duration": null
+    },
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "how-it-works/change-to-production",
+    "title": "How a change reaches production",
+    "summary": "The path a change takes from a session to the live site, and who clicks what.",
+    "url": "https://hadji.ai/docs/how-it-works/change-to-production/",
+    "screens": [],
+    "kind": "explainer",
+    "video": {
+      "kind": "explainer",
+      "src": "https://hadji.ai/docs/media/change-to-production.mp4",
+      "poster": "https://hadji.ai/docs/media/change-to-production.jpg",
+      "duration": null
+    },
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "issues/board",
+    "title": "The Issues board",
+    "summary": "See your GitHub issues in five columns, for one project or all of them.",
+    "url": "https://hadji.ai/docs/issues/board/",
+    "screens": [
+      "/o/*/issues",
+      "/o/*/p/*/issues"
+    ],
+    "kind": "concept",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "issues/start-from-issue",
+    "title": "Start a session from an issue",
+    "summary": "Turn one or more issues into sessions from the board.",
+    "url": "https://hadji.ai/docs/issues/start-from-issue/",
+    "screens": [],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "overview/project-overview",
+    "title": "The project Overview",
+    "summary": "One page that says what a project is, where it stands, and what needs you.",
+    "url": "https://hadji.ai/docs/overview/project-overview/",
+    "screens": [
+      "/o/*/p/*",
+      "/o/*/p/*/overview",
+      "/o/*/p/*/code-map"
+    ],
+    "kind": "concept",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "overview/pictures-and-handoffs",
+    "title": "Pictures and handoffs",
+    "summary": "Find the pictures sessions showed, share one with a link, and read handoff notes.",
+    "url": "https://hadji.ai/docs/overview/pictures-and-handoffs/",
+    "screens": [
+      "/o/*/p/*/overview/pictures"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "phone/install",
+    "title": "Install the phone app",
+    "summary": "Put Hadji on your iPhone Home Screen and turn on notifications.",
+    "url": "https://hadji.ai/docs/phone/install/",
+    "screens": [
+      "/o/*?settings=phone"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "phone/using-the-phone-app",
+    "title": "Using the phone app",
+    "summary": "Check sessions, answer questions, see issues and deploys from your phone.",
+    "url": "https://hadji.ai/docs/phone/using-the-phone-app/",
+    "screens": [
+      "/m",
+      "/m/settings",
+      "/m/c/*",
+      "/m/p/*/deploys",
+      "/m/*",
+      "/m/*/settings",
+      "/m/*/chats",
+      "/m/*/c/*",
+      "/m/*/p/*",
+      "/m/*/p/*/new"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "projects/all-projects",
+    "title": "All projects",
+    "summary": "The page that lists your projects, and what it shows before you have any.",
+    "url": "https://hadji.ai/docs/projects/all-projects/",
+    "screens": [
+      "/o/*"
+    ],
+    "kind": "concept",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "projects/add-project",
+    "title": "Add a project",
+    "summary": "Let Hadji see another GitHub repository so it shows up as a project.",
+    "url": "https://hadji.ai/docs/projects/add-project/",
+    "screens": [],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "sessions/using-sessions",
+    "title": "The Sessions tab",
+    "summary": "Start sessions, talk to agents, and keep track of what each one is doing.",
+    "url": "https://hadji.ai/docs/sessions/using-sessions/",
+    "screens": [
+      "/o/*/p/*/sessions",
+      "/o/*/sessions"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "sessions/status-colours",
+    "title": "What the colors mean",
+    "summary": "The colored dot beside each session, and what it says about the session.",
+    "url": "https://hadji.ai/docs/sessions/status-colours/",
+    "screens": [],
+    "kind": "concept",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "sessions/questions-and-approvals",
+    "title": "Questions and approvals",
+    "summary": "Answer an agent's question, press Go, or approve a request before work starts.",
+    "url": "https://hadji.ai/docs/sessions/questions-and-approvals/",
+    "screens": [],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "sessions/side-chat",
+    "title": "Ask about a session without interrupting it",
+    "summary": "The side chat answers questions about a session while the agent keeps working.",
+    "url": "https://hadji.ai/docs/sessions/side-chat/",
+    "screens": [],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "sessions/cost-and-context",
+    "title": "Cost and context",
+    "summary": "What the cost figure and the context meter in a session mean.",
+    "url": "https://hadji.ai/docs/sessions/cost-and-context/",
+    "screens": [],
+    "kind": "concept",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "settings/preferences",
+    "title": "Preferences",
+    "summary": "Change how the console looks on this browser.",
+    "url": "https://hadji.ai/docs/settings/preferences/",
+    "screens": [
+      "/o/*/settings",
+      "/o/*?settings=preferences"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "settings/profile",
+    "title": "Your profile",
+    "summary": "Set your name, photo and time zone, or sign out.",
+    "url": "https://hadji.ai/docs/settings/profile/",
+    "screens": [
+      "/o/*?settings=profile"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "settings/notifications",
+    "title": "Notifications",
+    "summary": "Get a desktop alert when a session needs you.",
+    "url": "https://hadji.ai/docs/settings/notifications/",
+    "screens": [
+      "/o/*?settings=notifications"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "settings/connected-accounts",
+    "title": "Connected accounts",
+    "summary": "Connect your GitHub, Claude and Codex accounts so sessions act as you.",
+    "url": "https://hadji.ai/docs/settings/connected-accounts/",
+    "screens": [
+      "/o/*/profile",
+      "/o/*?settings=accounts"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "settings/ai-models-agents",
+    "title": "AI models and agents",
+    "summary": "Choose the model for your new sessions, the backup, and your connected agents.",
+    "url": "https://hadji.ai/docs/settings/ai-models-agents/",
+    "screens": [
+      "/o/*?settings=ai"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "settings/models-costs",
+    "title": "Models and costs",
+    "summary": "Set the workspace's default models, backups and each model's context limit.",
+    "url": "https://hadji.ai/docs/settings/models-costs/",
+    "screens": [
+      "/o/*?settings=models"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "settings/instructions",
+    "title": "Session instructions",
+    "summary": "Tell every session how to write and work, for the team or just for you.",
+    "url": "https://hadji.ai/docs/settings/instructions/",
+    "screens": [
+      "/o/*?settings=instructions",
+      "/o/*?settings=my-instructions"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "settings/session-image",
+    "title": "Session image and startup steps",
+    "summary": "Choose what each session's sandbox has ready before the agent starts.",
+    "url": "https://hadji.ai/docs/settings/session-image/",
+    "screens": [
+      "/o/*?settings=chat-image",
+      "/o/*?settings=my-chat-image"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "settings/session-settings",
+    "title": "Session settings",
+    "summary": "Org-wide rules for sessions: asking first, CI alarms, fresh starts and graph memory.",
+    "url": "https://hadji.ai/docs/settings/session-settings/",
+    "screens": [
+      "/o/*?settings=chats"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "settings/sandbox-network",
+    "title": "Sandbox network",
+    "summary": "Choose which internet hosts a session's sandbox can reach.",
+    "url": "https://hadji.ai/docs/settings/sandbox-network/",
+    "screens": [
+      "/o/*?settings=network"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "settings/organization",
+    "title": "Organization settings",
+    "summary": "Change your organization's name, address, logo and accent color.",
+    "url": "https://hadji.ai/docs/settings/organization/",
+    "screens": [
+      "/o/*?settings=organization"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "settings/members-roles",
+    "title": "Members and roles",
+    "summary": "Invite people, set what each role can do, and lower a role on one project.",
+    "url": "https://hadji.ai/docs/settings/members-roles/",
+    "screens": [
+      "/o/*?settings=members",
+      "/o/*?settings=projects/*/people"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "settings/secrets",
+    "title": "Secrets",
+    "summary": "Store passwords and keys safely, at the org, project or personal level.",
+    "url": "https://hadji.ai/docs/settings/secrets/",
+    "screens": [
+      "/o/*?settings=secrets",
+      "/o/*?settings=projects/*/secrets"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "settings/github",
+    "title": "GitHub",
+    "summary": "See which GitHub account feeds this org's projects, and restore hidden ones.",
+    "url": "https://hadji.ai/docs/settings/github/",
+    "screens": [
+      "/o/*?settings=github"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "settings/audit-log",
+    "title": "Audit log",
+    "summary": "See who did what in the organization, newest first.",
+    "url": "https://hadji.ai/docs/settings/audit-log/",
+    "screens": [
+      "/o/*?settings=audit"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "settings/project-settings",
+    "title": "Project settings",
+    "summary": "Per-project settings: safe merging, ask first, memory, requests and access.",
+    "url": "https://hadji.ai/docs/settings/project-settings/",
+    "screens": [
+      "/o/*?settings=projects/*"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
     "id": "sample-start-a-job",
     "title": "Start your first job",
     "summary": "Describe the problem in plain words. Hadji plans it, builds it and tests it.",
@@ -43,6 +477,51 @@
       "job"
     ],
     "kind": "guide",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "start/what-hadji-is",
+    "title": "What Hadji is",
+    "summary": "Hadji is a workspace where AI agents change your code, and you stay in charge.",
+    "url": "https://hadji.ai/docs/start/what-hadji-is/",
+    "screens": [],
+    "kind": "concept",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "start/first-session",
+    "title": "Your first session",
+    "summary": "Start a session, ask for a small change, and follow it until it lands.",
+    "url": "https://hadji.ai/docs/start/first-session/",
+    "screens": [],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "start/new-organization",
+    "title": "Create an organization",
+    "summary": "Make a new organization, then connect GitHub to add projects.",
+    "url": "https://hadji.ai/docs/start/new-organization/",
+    "screens": [
+      "/new"
+    ],
+    "kind": "how-to",
+    "video": null,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "start/join-an-organization",
+    "title": "Sign in and join an organization",
+    "summary": "Sign in with Google and accept an invitation to join a team.",
+    "url": "https://hadji.ai/docs/start/join-an-organization/",
+    "screens": [
+      "/sign-in",
+      "/invite/*/*"
+    ],
+    "kind": "how-to",
     "video": null,
     "updated": "2026-11-02"
   }
