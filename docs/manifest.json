@@ -40,7 +40,7 @@
       "kind": "recording",
       "src": "https://hadji.ai/docs/media/deploy-preview.mp4",
       "poster": "https://hadji.ai/docs/media/deploy-preview.jpg",
-      "duration": null
+      "duration": 36
     },
     "updated": "2026-11-02"
   },
@@ -77,7 +77,7 @@
       "kind": "explainer",
       "src": "https://hadji.ai/docs/media/how-a-session-works.mp4",
       "poster": "https://hadji.ai/docs/media/how-a-session-works.jpg",
-      "duration": null
+      "duration": 72
     },
     "updated": "2026-11-02"
   },
@@ -92,7 +92,7 @@
       "kind": "explainer",
       "src": "https://hadji.ai/docs/media/change-to-production.mp4",
       "poster": "https://hadji.ai/docs/media/change-to-production.jpg",
-      "duration": null
+      "duration": 75
     },
     "updated": "2026-11-02"
   },
@@ -450,6 +450,16 @@
     "kind": "how-to",
     "video": null,
     "updated": "2026-11-02"
+  },
+  {
+    "id": "settings/video-skill",
+    "title": "The video skill",
+    "summary": "What a chat does with an uploaded video, what leaves the sandbox, and how to turn it off.",
+    "url": "https://hadji.ai/docs/settings/video-skill/",
+    "screens": [],
+    "kind": "explainer",
+    "video": null,
+    "updated": "2026-11-06"
   },
   {
     "id": "sample-start-a-job",
