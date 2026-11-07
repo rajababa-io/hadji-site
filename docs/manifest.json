@@ -40,7 +40,7 @@
       "kind": "recording",
       "src": "https://hadji.ai/docs/media/deploy-preview.mp4",
       "poster": "https://hadji.ai/docs/media/deploy-preview.jpg",
-      "duration": 36
+      "duration": 35
     },
     "updated": "2026-11-02"
   },
@@ -454,12 +454,12 @@
   {
     "id": "settings/video-skill",
     "title": "The video skill",
-    "summary": "What a chat does with an uploaded video, what leaves the sandbox, and how to turn it off.",
+    "summary": "What a chat does with an uploaded video or a YouTube link, what leaves the sandbox, and how to turn it off.",
     "url": "https://hadji.ai/docs/settings/video-skill/",
     "screens": [],
     "kind": "explainer",
     "video": null,
-    "updated": "2026-11-06"
+    "updated": "2026-11-07"
   },
   {
     "id": "sample-start-a-job",

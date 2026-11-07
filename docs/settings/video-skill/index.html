@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The video skill — Hadji Docs</title>
-<meta name="description" content="What a chat does with an uploaded video, what leaves the sandbox, and how to turn it off.">
+<meta name="description" content="What a chat does with an uploaded video or a YouTube link, what leaves the sandbox, and how to turn it off.">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#08090A">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
@@ -27,8 +27,8 @@
   <article class="doc">
     <div class="crumb"><a href="/docs/">Guides</a> / <b>Settings</b></div>
     <h1>The video skill</h1>
-    <p class="lead">What a chat does with an uploaded video, what leaves the sandbox, and how to turn it off.</p>
-    <p class="meta">Updated Nov 6 · about 2 minutes</p>
+    <p class="lead">What a chat does with an uploaded video or a YouTube link, what leaves the sandbox, and how to turn it off.</p>
+    <p class="meta">Updated Nov 7 · about 3 minutes</p>
     
     <div class="prose">
 <p>Hadji chats have a <strong>video</strong> skill. It is <strong>on for every organization</strong> until an org admin turns it off. This page tells you what it does, what leaves the sandbox, and how to change it.</p>
@@ -36,10 +36,11 @@
 <p>When you upload a video, a chat can work out what happens in it.</p>
 <ul><li>It reads the speech in the video.</li><li>It picks stills where the picture changes.</li><li>It zooms in on the moment that matters.</li><li>It shows you the proof.</li></ul>
 <p>It reads at most 30 stills. Then it reads 30 more on one moment. Then it asks you.</p>
+<p>A public YouTube link works too, with fewer parts. See <a href="#video-links">Video links</a>.</p>
 <h2 id="what-leaves-the-sandbox">What leaves the sandbox</h2>
 <p>Some of it leaves the chat's sandbox. Here is what, and to whom.</p>
-<ul><li><strong>The sound goes to OpenAI.</strong> OpenAI turns the speech into text. A voice in a recording goes with it. So does any customer name said in the recording.</li><li><strong>Stills and typed words</strong> also reach the AI company running the chat, as with any file a chat reads.</li><li><strong>The video itself</strong> stays in your organization's storage. It leaves the sandbox only as stills and sound.</li></ul>
-<p>Hadji pays for the speech-to-text. Your organization needs no account with OpenAI.</p>
+<ul><li><strong>The sound goes to OpenAI.</strong> OpenAI turns the speech into text. A voice in a recording goes with it. So does any customer name said in the recording.</li><li><strong>A public YouTube link goes to Google.</strong> Google reads the video itself and sends back words. No file passes through the sandbox.</li><li><strong>Stills and typed words</strong> also reach the AI company running the chat, as with any file a chat reads.</li><li><strong>The video itself</strong> stays in your organization's storage. It leaves the sandbox only as stills and sound.</li></ul>
+<p>Hadji pays for the speech-to-text and for reading links. Your organization needs no account with OpenAI or Google.</p>
 <h2 id="what-openai-keeps">What OpenAI keeps</h2>
 <p>OpenAI's <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener">data controls page</a>, read on 2026-11-06, lists the speech-to-text service (<code>/v1/audio/transcriptions</code>) as:</p>
 <ul><li>not used for training</li><li>no abuse-monitoring retention</li><li>no stored application state</li></ul>
@@ -53,7 +54,9 @@
 <ul><li>Write <strong>org chat instructions</strong>. See <a href="/docs/settings/instructions/">Session instructions</a>.</li><li>Or keep <strong>your organization's own skill</strong> in your repository.</li></ul>
 <p>Hadji's updates never touch either of these.</p>
 <h2 id="video-links">Video links</h2>
-<p>Video links are not supported. If you paste one, the chat asks you to upload the file instead.</p>
+<p>A chat can read a <strong>public YouTube link</strong>. Paste it and the chat gives you a summary with chapters.</p>
+<ul><li><strong>Words only.</strong> There is no file, so the chat reads no stills and cannot zoom on a moment. The reply says so.</li><li><strong>Chapter times are approximate.</strong> In a test most matched the video's own chapters exactly, but one was 11 seconds late.</li><li><strong>Google reads the video.</strong> The link goes to Google, a company that handles it for Hadji.</li><li><strong>Private and unlisted videos cannot be read</strong>, and neither can links from other sites. The chat says so and asks you to upload the file instead.</li></ul>
+<p>Turning the skill off stops links too.</p>
     </div>
     <aside class="note ask"><b>Rather not click through it?</b> Ask Hadji to do it for you — type what you want in the chat and it does the steps. <a href="https://app.hadji.ai">Ask Hadji →</a></aside>
   </article>
