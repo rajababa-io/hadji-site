@@ -22,18 +22,19 @@ When you upload a video, a chat can work out what happens in it.
 
 It reads at most 30 stills. Then it reads 30 more on one moment. Then it asks you.
 
-A public YouTube link works too, with fewer parts. See [Video links](#video-links).
+A public YouTube link works too. A chat reads the video and can show you a moment from it. See [Video links](#video-links).
 
 ## What leaves the sandbox
 
 Some of it leaves the chat's sandbox. Here is what, and to whom.
 
-- **The sound goes to OpenAI.** OpenAI turns the speech into text. A voice in a recording goes with it. So does any customer name said in the recording.
+- **The sound from an uploaded video goes to OpenAI.** OpenAI turns the speech into text. A voice in a recording goes with it. So does any customer name said in the recording.
 - **A public YouTube link goes to Google.** Google reads the video itself and sends back words. No file passes through the sandbox.
+- **A still from a YouTube link comes from Browser Use.** Browser Use runs the browser that opens the public video on YouTube and takes a screenshot of the player. It sees the link and the page it opens. No video file is downloaded.
 - **Stills and typed words** also reach the AI company running the chat, as with any file a chat reads.
-- **The video itself** stays in your organization's storage. It leaves the sandbox only as stills and sound.
+- **An uploaded video** stays in your organization's storage. It leaves the sandbox only as stills and sound.
 
-Hadji pays for the speech-to-text and for reading links. Your organization needs no account with OpenAI or Google.
+Hadji pays for the speech-to-text, for reading links and for the browser. No setup by any org is needed: your organization needs no account with OpenAI, Google or Browser Use.
 
 ## What OpenAI keeps
 
@@ -66,9 +67,11 @@ Hadji's updates never touch either of these.
 
 A chat can read a **public YouTube link**. Paste it and the chat gives you a summary with chapters.
 
-- **Words only.** There is no file, so the chat reads no stills and cannot zoom on a moment. The reply says so.
+- **Google reads the video.** Google watches the video itself and answers in words. No file passes through the sandbox.
+- **Stills come from a browser.** To show a moment, a browser that Hadji rents from Browser Use opens the public video on YouTube, on Hadji's account, and takes a screenshot of the player. A still is a screenshot, not a downloaded video. Nothing signs in.
+- **Limits.** Each workspace gets 200 stills a day. A chat asks you before it takes more than 60 stills of one video.
+- **If YouTube or the browser refuses**, the chat says there is no still for that moment and carries on from the words.
 - **Chapter times are approximate.** In a test most matched the video's own chapters exactly, but one was 11 seconds late.
-- **Google reads the video.** The link goes to Google, a company that handles it for Hadji.
 - **Private and unlisted videos cannot be read**, and neither can links from other sites. The chat says so and asks you to upload the file instead.
 
 Turning the skill off stops links too.
