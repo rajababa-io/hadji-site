@@ -199,7 +199,7 @@ const topbar = active => `<header><div class="bar">
   <form class="search" role="search" onsubmit="return false"><input id="q" type="search" placeholder="Search the docs" autocomplete="off" aria-label="Search the docs"><div id="results" class="results" hidden></div></form>
   <nav><a href="/docs/"${active === 'guides' ? ' class="on"' : ''}>Guides</a><a href="/docs/videos/"${active === 'videos' ? ' class="on"' : ''}>Videos</a><a href="/">Product</a><a class="pill" href="${APP}">Open Hadji</a></nav>
 </div></header>`;
-const footer = `<footer><div class="wrap"><span class="brand"><img src="/assets/wordmark.svg" alt="Hadji" style="height:20px"></span><span>© 2026 Hadji</span></div></footer>
+const footer = `<footer><div class="wrap"><span class="brand"><img src="/assets/wordmark.svg" alt="Hadji" style="height:20px"></span><span class="legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a>© 2026 Hadji</span></div></footer>
 <script src="/docs/assets/docs.js"></script>
 </body></html>`;
 const sidenav = cur => `<nav class="side" aria-label="Guides">${areas.map(a => `<h6>${esc(a.title)}</h6>${a.items.map(x => `<a href="/docs/${x.area}/${x.slug}/"${x === cur ? ' class="open" aria-current="page"' : ''}>${esc(x.data.title)}</a>`).join('')}`).join('')}</nav>`;

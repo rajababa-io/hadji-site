@@ -101,6 +101,7 @@ header nav a:hover, header nav a.on { color:var(--fg); }
 
 footer { border-top:1px solid var(--line); color:var(--dim); font-size:14px; }
 footer .wrap { display:flex; align-items:center; justify-content:space-between; height:72px; }
+footer .legal a { margin-right:22px; } footer .legal a:hover { color:var(--fg); }
 
 @media (max-width:1100px) { .layout { grid-template-columns:220px minmax(0,1fr); } .rail { display:none; } }
 @media (max-width:760px) {
